@@ -20,17 +20,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bn;
-    EditText et;
-    TextView tv;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = findViewById(R.id.button);
         final EditText et = findViewById(R.id.editText);
-        final TextView tv = findViewById(R.id.textView);
+        final TextView tv1 = findViewById(R.id.textView1);
+        final TextView tv2 = findViewById(R.id.textView2);
 
         readMolitaliaData();
 
@@ -41,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 int len = molitaliaSamples.size();
                 for(int i=0; i<len; i++) {
                     if (String.valueOf(molitaliaSamples.get(i).getCode()).equals(et.getText().toString())) {
-                        tv.setText(i);
+                        tv1.setText(molitaliaSamples.get(i).getText());
+                        tv2.setText(String.valueOf(molitaliaSamples.get(i).getPal()));
                     }
                 }
             }
