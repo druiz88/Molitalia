@@ -1,6 +1,7 @@
 package com.example.molitalia;
 
 import java.io.Serializable;
+import androidx.annotation.NonNull;
 
 class MolitaliaSample implements Serializable {
     private int Code;
@@ -32,7 +33,7 @@ class MolitaliaSample implements Serializable {
     }
 
     @Override
-    public String toString() {
+    public @NonNull String toString() {
         return "MolitaliaSample{" +
                 "Code=" + Code +
                 ", Text=" + Text +

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Molitalia</string>
+    <string name="btn_name">BUTTON</string>
+    <string name="et_hint">""</string>
 </resources>
