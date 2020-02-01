@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("MyActivity", "Just Created: " + sample);
 
-
             }
         } catch (IOException e) {
                 e.printStackTrace();

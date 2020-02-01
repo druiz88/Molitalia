@@ -35,7 +35,7 @@ class MolitaliaSample implements Serializable {
     public String toString() {
         return "MolitaliaSample{" +
                 "Code=" + Code +
-                ", Text='" + Text + '\'' +
+                ", Text=" + Text +
                 ", Pal=" + Pal +
                 '}';
     }
